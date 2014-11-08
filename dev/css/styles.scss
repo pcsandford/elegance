@@ -52,7 +52,7 @@
   100% {color:#ECF0F1}
 }
 
-//left/right button effect
+//left and right button effect
 @keyframes triggerAnimation {
    0%  {stroke-width:6}
   50% {stroke-width:3;stroke:#6C7A89;}
@@ -62,21 +62,28 @@
 
 
 
-
+//main body
 
 body {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", "Great Vibes", "helvetica neue";
   font-size: 8vw;
   color: white;
 }
 
+
+//main container wrapper
 .wrapper {
   width:100vw;
   height:100vh;
   background-color: white;
   overflow:hidden;
   position: relative;
+
+//=======
+//Cover effect
+//=======
  
+//left cover with diamond pattern and header text
 
   .leftCover {
     min-width:50vw;
@@ -115,7 +122,7 @@ body {
         font-size: 8vw;
       }
 
-     p span {
+      p span {
         font-weight: 400;
         font-family: "Great Vibes";
         font-style: italic;
@@ -123,11 +130,11 @@ body {
         z-index: 6;
         font-size: 11vw;
         animation: eleganceGlow 10s linear infinite;
-
       }
     }
-  }
+  }//close left cover
 
+//right cover with pattern, text and diamond trigger button
   .rightCover {
     width:50vw;
     max-height:100vh;
@@ -144,7 +151,7 @@ body {
       height:100%;
     }
    
-
+//container for diamond trigger
     .diamondButton {
       // border:1px solid red;
       min-width:100px;
@@ -160,6 +167,7 @@ body {
         height:100%;
       }
 
+//diamond trigger animation commands
       svg .mainColour {
         animation: diamondGlowMain 5s linear infinite;
       }
@@ -167,11 +175,10 @@ body {
       svg .shadowColour {
         animation: diamondGlowShadow 5s linear infinite;
       }
-
-
-
     }
-    .diamondText {
+
+//text for touch instruction
+      .diamondText {
       // border:1px solid red;
       float:right;
       margin-right: 15%;
@@ -183,7 +190,11 @@ body {
       bottom:8%;
       z-index:4;
     }
-  }
+  }//close right cover
+
+//=======
+//Background and main area visible when cover is opened
+//=======
 
   .mainBackground {
     width:100%;
@@ -191,6 +202,7 @@ body {
     background-color: white;
     padding:1px;
 
+//store information at top left of screen
     .storeInformation {
       padding:10px;
       max-width: 30%;
@@ -202,6 +214,7 @@ body {
       color:black;
     }
 
+//image holder and image slider divs for jQuery slider effect
     #imageHolder {
       padding:1px;
       width: 70vw;
@@ -214,20 +227,21 @@ body {
         width: 70vw;
         height:70vh;
 
-
+//styling for images so they are centered within the container
         .sp {
-        position: absolute;
-        width: 70vw;
-        height:70vh;
-        z-index: 1;
+          position: absolute;
+          width: 70vw;
+          height:70vh;
+          z-index: 1;
         
-        img {display:block;
-        margin:0 auto;
-        width:80%;
-        height:100%;
-      }
+          img {
+            display:block;
+            margin:0 auto;
+            width:80%;
+            height:100%;
+          }
        
-
+//styling for text to accompany images
         p {
           position: absolute;
           font-size: 2vw;
@@ -239,10 +253,10 @@ body {
         }
         }
       }
-    }
+    }//close image holder
 
   
-
+//trigger arrow to scroll from the left
     .previousTrigger {
       width:80px;
       height:80px;
@@ -250,16 +264,18 @@ body {
       margin-left:10%;
       margin-top: -10%;
         
-        .leftArrow {
-          width:100%;
-          height:100%;
+      .leftArrow {
+        width:100%;
+        height:100%;
           
-          path {
-            animation: triggerAnimation 10s linear infinite;
-          }
+        path {
+          animation: triggerAnimation 10s linear infinite;
         }
-    }
+      }
+    }//close previous trigger
 
+
+//trigger arrow to scroll from the right
     .nextTrigger {
       width:80px;
       height:80px;
@@ -267,16 +283,16 @@ body {
       margin-right:10%;
       margin-top: -10%;
         
-        .rightArrow {
-          width:100%;
-          height:100%;
+      .rightArrow {
+        width:100%;
+        height:100%;
          
-         path {
-            animation: triggerAnimation 10s linear infinite;
-          }
+        path {
+          animation: triggerAnimation 10s linear infinite;
         }
-    }
+      }
+    }//close next trigger
 
-  }
+  }//close main background
 
-}
+}//close wrapper
