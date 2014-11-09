@@ -54,9 +54,9 @@
 
 //left and right button effect
 @keyframes triggerAnimation {
-   0%  {stroke-width:6}
-  50% {stroke-width:3;stroke:#6C7A89;}
-  100% {stroke-width:6}
+   0%  {stroke:#111;}
+  50% {stroke:#6C7A89;}
+  100% {stroke:#111;}
 }
 
 
