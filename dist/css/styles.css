@@ -183,20 +183,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     color: #E4F1FE; } }
 @-webkit-keyframes triggerAnimation {
   0% {
-    stroke-width: 6; }
+    stroke: #111; }
   50% {
-    stroke-width: 3;
     stroke: #6C7A89; }
   100% {
-    stroke-width: 6; } }
+    stroke: #111; } }
 @keyframes triggerAnimation {
   0% {
-    stroke-width: 6; }
+    stroke: #111; }
   50% {
-    stroke-width: 3;
     stroke: #6C7A89; }
   100% {
-    stroke-width: 6; } }
+    stroke: #111; } }
 body {
   font-family: "Josefin Sans", "Great Vibes", "helvetica neue";
   font-size: 8vw;
