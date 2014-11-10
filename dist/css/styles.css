@@ -183,20 +183,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     color: #E4F1FE; } }
 @-webkit-keyframes triggerAnimation {
   0% {
-    stroke-width: 6; }
+    stroke: #111; }
   50% {
-    stroke-width: 3;
     stroke: #6C7A89; }
   100% {
-    stroke-width: 6; } }
+    stroke: #111; } }
 @keyframes triggerAnimation {
   0% {
-    stroke-width: 6; }
+    stroke: #111; }
   50% {
-    stroke-width: 3;
     stroke: #6C7A89; }
   100% {
-    stroke-width: 6; } }
+    stroke: #111; } }
 body {
   font-family: "Josefin Sans", "Great Vibes", "helvetica neue";
   font-size: 8vw;
@@ -301,62 +299,39 @@ body {
       max-width: 30%;
       margin-left: 10%;
       margin-top: 1%;
-<<<<<<< HEAD
-      border: 2px solid white;
-      font-size: 2vw;
-=======
       font-size: 3vw;
->>>>>>> gh-pages
       text-align: center;
       color: black; }
     .wrapper .mainBackground #imageHolder {
       padding: 1px;
       width: 70vw;
       height: 70vh;
-<<<<<<< HEAD
-      margin: 0 auto;
-      border: 1px solid green; }
-=======
       margin: 0 auto; }
->>>>>>> gh-pages
       .wrapper .mainBackground #imageHolder #imageSlider {
         position: relative;
         width: 70vw;
         height: 70vh; }
         .wrapper .mainBackground #imageHolder #imageSlider .sp {
           position: absolute;
-<<<<<<< HEAD
-          width: 70vw;
-          height: 70vh;
-=======
           width: 60vw;
           height: 60vh;
->>>>>>> gh-pages
           z-index: 1; }
           .wrapper .mainBackground #imageHolder #imageSlider .sp img {
             display: block;
             margin: 0 auto;
             width: 80%;
             height: 100%; }
-<<<<<<< HEAD
-          .wrapper .mainBackground #imageHolder #imageSlider .sp p {
-=======
           .wrapper .mainBackground #imageHolder #imageSlider .sp .infoHolder {
->>>>>>> gh-pages
             position: absolute;
             font-size: 2vw;
             color: black;
             z-index: 8;
             bottom: -10vh;
             right: 0;
-<<<<<<< HEAD
-            border: 1px solid red; }
-=======
             text-align: left; }
             .wrapper .mainBackground #imageHolder #imageSlider .sp .infoHolder .price {
               text-align: right;
               line-height: 0px; }
->>>>>>> gh-pages
     .wrapper .mainBackground .previousTrigger {
       width: 80px;
       height: 80px;
