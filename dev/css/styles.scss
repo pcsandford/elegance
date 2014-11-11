@@ -96,6 +96,7 @@ body {
     left:0;
     top:0;
     background-color: #34495E;
+    opacity:0.9;
     z-index:5;
     transition:all 1s ease-in-out;
 
@@ -135,6 +136,14 @@ body {
         animation: eleganceGlow 10s linear infinite;
       }
     }
+
+    .logoArea {
+      width:70%;
+      z-index: 6;
+      position: absolute;
+      bottom:10px;
+      left:35px;
+    }
   }//close left cover
 
 //right cover with pattern, text and diamond trigger button
@@ -146,12 +155,30 @@ body {
     right:0;
     top:0;
     background: #34495E;
+    opacity:0.9;
     z-index:5;
     transition:all 1s ease-in-out;
 
     .leftPattern {
       width:100%;
       height:100%;
+    }
+
+//both github and cameroncodes watermarks to be removed in final version
+    .gitHubWatermark {
+      width:30%;
+      position: absolute;
+      top:10px;
+      right:100px;
+      opacity: 0.5;
+    }
+
+    .cameronCodesWatermark {
+      width:30%;
+      position: absolute;
+      top:10px;
+      right:20px;
+      opacity: 0.5;
     }
    
 //container for diamond trigger
@@ -207,13 +234,23 @@ body {
 
 //store information at top left of screen
     .storeInformation {
-      padding:10px;
-      max-width: 30%;
-      margin-left: 10%;
-      margin-top: 1%;
-      font-size: 3vw;
-      text-align: center;
+      width:70%;
+      position: absolute;
+      top:10px;
+      left:35px;
+      z-index: 2;
+    }
+
+//picture accreditation
+    .pictureAccreditation {
+      position: absolute;
+      left:10px;
+      bottom:10px;
       color:black;
+
+      h5 {
+        font-size: 12px;
+      }
     }
 
 //image holder and image slider divs for jQuery slider effect
@@ -226,22 +263,28 @@ body {
 
 
       #imageSlider {
+        margin-top: 10%;
         position: relative;
         width: 70vw;
         height:70vh;
+        border:1px solid green;
 
 //styling for images so they are centered within the container
         .sp {
           position: absolute;
-          width: 60vw;
-          height:60vh;
+          margin:auto;
+          width: 70vw;
+          height:70vh;
           z-index: 1;
+          border:1px solid red;
         
           img {
             display:block;
-            margin:0 auto;
-            width:80%;
-            height:100%;
+            margin: auto;
+            margin-top: -5%;
+            width: 700px;
+            height: 500px;
+            border:1px solid blue;
           }
        
 //styling for text to accompany images
@@ -304,3 +347,31 @@ body {
   }//close main background
 
 }//close wrapper
+
+@media only screen and (min-width: 1280px) {
+ .sp img {
+   width: 800px;
+   height:500px;
+ }
+}
+
+@media only screen and (min-width: 1360px) {
+.sp img {
+   width: 500px;
+   height:300px;
+ }
+}
+
+@media only screen and (min-width: 1920px) {
+.sp img {
+  width:400px;
+  height:250px;
+ }
+}
+
+@media only screen and (min-width: 3840px) {
+.sp img {
+   width: 1200px;
+   height:900px;
+ }
+}
