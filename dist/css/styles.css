@@ -336,22 +336,19 @@ body {
         margin-top: 10%;
         position: relative;
         width: 70vw;
-        height: 70vh;
-        border: 1px solid green; }
+        height: 70vh; }
         .wrapper .mainBackground #imageHolder #imageSlider .sp {
           position: absolute;
           margin: auto;
           width: 70vw;
           height: 70vh;
-          z-index: 1;
-          border: 1px solid red; }
+          z-index: 1; }
           .wrapper .mainBackground #imageHolder #imageSlider .sp img {
             display: block;
             margin: auto;
             margin-top: -5%;
             width: 700px;
-            height: 500px;
-            border: 1px solid blue; }
+            height: 500px; }
           .wrapper .mainBackground #imageHolder #imageSlider .sp .infoHolder {
             position: absolute;
             font-size: 2vw;
