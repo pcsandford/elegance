@@ -1,51 +1,58 @@
 
   $(document).ready(function(){
-    console.log('ready');
-    $('html').on('click',function(){
+   console.log('ready');
+
+  //fade in of main text
+  $('.headerText').fadeIn( 3000 );
+
+  //automatic opening of cover
+ var openingTimer = setTimeout(autoOpen, 5000);
+
+ 
+
+  //open curtain on click event
+  $('html').on('click',function(){
     $('.leftCover').css("left","-50vw");
     $('.rightCover').css("right","-50vw");
     $('.logoAreaMain').fadeIn().css("opacity","1");
+    $('.headerText').fadeOut().css("opacity","0");
   });
 
-//timeout resetting the curtain now set to 2 minutes so effectively 
-//will work 60 seconds after initial opening if no touch detected
+  //automatic closing of cover and reset of cycle
 
-var activityTimeout = setTimeout(inActive, 120000);
+ // var closingTimer = setTimeout(autoClose, 10000);
 
-
-function resetActive(){
-    $(document.body).attr('class', 'browsing');
-    clearTimeout(activityTimeout);
-    clearTimeout(automaticSliderTimer);
-    //timeout in this case set to 60s if touch has been detected
-    activityTimeout = setTimeout(inActive, 60000);
-    // clearInterval(openingTimer);
-    // openingTimer = setInterval(autoOpen,20000);
-}
-
-// No activity will reset the screen and bring back the title in transition.
-function inActive(){
-    $(document.body).attr('class', 'inactive');
+  function autoClose(){
+    openingTimer = setTimeout(autoOpen, 5000);
     $('.leftCover').css("left","0vw");
     $('.rightCover').css("right","0vw");
     $('.logoAreaMain').fadeOut().css("opacity","0");
-    clearInterval(openingTimer);
-    openingTimer = setInterval(autoOpen,60000);
-    clearTimeout(activityTimeout);
-    activityTimeout = setTimeout(inActive, 120000);
-    clearTimeout(automaticSliderTimer);
+    $('.headerText').fadeIn( 3000 );
+    clearTimeout(closingTimer);
+
+  };
+
+ function autoOpen(){
+    $('.leftCover').css("left","-50vw");
+    $('.rightCover').css("right","-50vw");
+    $('.logoAreaMain').fadeIn().css("opacity","1");
+    $('.headerText').fadeOut().css("opacity","0");
+    clearTimeout(openingTimer);
+    numberofSlides = 0;
     automaticSliderTimer = setInterval(slideSwitch, 10000 );
-}
-
-// Check to see if the user has clicked left or right and if so reset the timer.
-$(document).bind('click', function(){resetActive()});
+  };
 
 
-//slider functionality
+
+ //slider functionality
 
 $('.sp').first().addClass('active');
 $('.sp').hide();    
 $('.active').show();
+
+//=======
+//manual trigger functions
+//=======
 
     $('.nextTrigger').click(function(){
       clearTimeout(automaticSliderTimer);
@@ -75,39 +82,40 @@ $('.active').show();
       $('.active').fadeIn();
     });//close previous trigger function
 
-      
-    //open the screens
 
-      var openingTimer = setInterval(autoOpen,60000);
-      var automaticSliderTimer = setInterval(slideSwitch, 10000 );
 
-      function autoOpen(){
-        console.log('autoOpen');
-        $('.leftCover').css("left","-50vw");
-        $('.rightCover').css("right","-50vw");
-        $('.logoAreaMain').fadeIn().css("opacity","1");
-        clearInterval(openingTimer);
-      };
-       
-       function slideSwitch(){
-        $('.active').removeClass('active').addClass('oldActive');    
+
+//=======
+//automatic timer for slide changes
+//=======
+
+// var automaticSliderTimer = setInterval(slideSwitch, 10000 );
+var numberofSlides = 0
+
+ function slideSwitch(){
+      if (numberofSlides < 4) {
+        $('.active').removeClass('active').addClass('oldActive'); 
+        numberofSlides++;   
         if ( $('.oldActive').is(':last-child')) {
           $('.sp').first().addClass('active');
+           
+
         }
           else{
             $('.oldActive').next().addClass('active');
+            
+
         }
       $('.oldActive').removeClass('oldActive');
       $('.sp').fadeOut();
-      $('.active').fadeIn(); 
+      $('.active').fadeIn();
+      }else{
+        clearTimeout(automaticSliderTimer);
+        autoClose();
+
       };
-
-  });//close main function
-
-
-
-
-
+    };
+ });//close main function
 
 
 
