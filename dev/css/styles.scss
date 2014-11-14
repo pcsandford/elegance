@@ -62,16 +62,6 @@ $gray: #111;
   100% {color:$glowWhite}
 }
 
-//left and right button effect - removed for this version
-// @keyframes triggerAnimation {
-
-//    0%  {stroke:$gray;}
-//   50% {stroke:$triggerBlue;}
-//   100% {stroke:$gray;}
-// }
-
-
-
 
 //main body
 
@@ -94,192 +84,152 @@ body {
   background-color: white;
   overflow:hidden;
   position: relative;
+}
 
-  .headerText {
-    width:80vw;
-    height:auto;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    text-align: center;
-    line-height: 1em;
-    z-index: 6;
-    opacity:0;
+.headerText {
+  width:80vw;
+  height:auto;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  line-height: 1em;
+  z-index: 6;
+  opacity:0;
+}
 
 
-    .textLine1 {
-      font-family: "Josefin Sans";
-      color: #ECF0F1;
-      font-size:5vw;
-      font-weight: 600;
-      margin-bottom: 0;
-      // animation: eleganceGlow 10s linear infinite;
-    }
+.textLine1 {
+  font-family: "Josefin Sans";
+  color: #ECF0F1;
+  font-size:5vw;
+  font-weight: 600;
+  margin-bottom: 0;
+}
 
-    .textLine2 {
-      font-weight: 400;
-      font-family: "Great Vibes";
-      // font-style: italic;
-      color:#ECF0F1;
-      font-size: 10vw;
-      line-height: 1.1em;
-      margin-top: 0;
-      // animation: eleganceGlow 10s linear infinite;
-    }
-  }
+.textLine2 {
+  font-weight: 400;
+  font-family: "Great Vibes";
+  color:#ECF0F1;
+  font-size: 10vw;
+  line-height: 1.1em;
+  margin-top: 0;
+}
+
 
 //=======
 //Cover effect
 //=======
  
-//left cover with diamond pattern and header text
+//left cover
 
-  .leftCover {
-    min-width:50vw;
-    min-height:100vh;
-    width:50vw;
-    max-height:100vh;
-    height:100vh;
-    position: absolute;
-    left:0;
-    top:0;
-    background: repeating-linear-gradient(left, $darkCover, $lightCover 8%, $darkCover 20%);
-    opacity:0.97;
-    z-index:5;
-    transition:left 1s ease-in-out;
+.leftCover {
+  width:50vw;
+  height:100vh;
+  position: absolute;
+  left:0;
+  top:0;
+  background: repeating-linear-gradient(left, $darkCover, $lightCover 8%, $darkCover 20%);
+  opacity:0.97;
+  z-index:5;
+  transition:left 1s ease-in-out;
+}
 
-
-    //commented out for now as pattern has been removed to see how curtain effect looks
-    // .rightPattern {
-    //   width:100%;
-    //   height:100%;
-    // }
-
-    .logoArea {
-      max-width:500px;
-      width:70%;
-      height:auto;
-      padding:1px;
-      z-index: 6;
-      position: absolute;
-      bottom:10px;
-      left:35px;
-    }
-  }//close left cover
-
-//right cover with pattern, text and diamond trigger button
-  .rightCover {
-    width:50vw;
-    max-height:100vh;
-    height:100vh;
-    position: absolute;
-    right:0;
-    top:0;
-    background: repeating-linear-gradient(right, $darkCover, $lightCover 8%, $darkCover 20%);
-    opacity:0.97;
-    z-index:5;
-    transition:right 1s ease-in-out;
+.logoArea {
+  max-width:500px;
+  width:70%;
+  height:auto;
+  padding:1px;
+  z-index: 6;
+  position: absolute;
+  bottom:10px;
+  left:35px;
+}
 
 
-    //commented out for now as pattern has been removed to see how curtain effect looks
-    // .leftPattern {
-    //   width:100%;
-    //   height:100%;
-    // }
+//right cover 
+.rightCover {
+  width:50vw;
+  height:100vh;
+  position: absolute;
+  right:0;
+  top:0;
+  background: repeating-linear-gradient(right, $darkCover, $lightCover 8%, $darkCover 20%);
+  opacity:0.97;
+  z-index:5;
+  transition:right 1s ease-in-out;
+}
+
 
 //both github and cameroncodes watermarks to be removed in final version
-    .gitHubWatermark {
-      width:30%;
-      position: absolute;
-      top:10px;
-      right:100px;
-      opacity: 0.5;
-    }
+.gitHubWatermark {
+  width:30%;
+  position: absolute;
+  top:10px;
+  right:100px;
+  opacity: 0.5;
+}
 
-    .cameronCodesWatermark {
-      width:30%;
-      position: absolute;
-      top:10px;
-      right:20px;
-      opacity: 0.5;
-    }
+.cameronCodesWatermark {
+  width:30%;
+  position: absolute;
+  top:10px;
+  right:20px;
+  opacity: 0.5;
+}
    
-//container for diamond trigger - removed in this version
-    // .diamondButton {
-    //   // border:1px solid red;
-    //   min-width:100px;
-    //   min-height:20vh;
-    //   width:30%;
-    //   position: absolute;
-    //   top:63.5%;
-    //   right:13%;
-      
-
-    //   .diamondTrigger {
-    //     width:100%;
-    //     height:100%;
-    //   }
-
-//diamond trigger animation commands
-    //   svg .mainColour {
-    //     animation: diamondGlowMain 5s linear infinite;
-    //   }
-
-    //   svg .shadowColour {
-    //     animation: diamondGlowShadow 5s linear infinite;
-    //   }
-    // }
 
 //text for touch instruction
-      .diamondText {
-      // border:1px solid red;
-      float:right;
-      margin-right: 15%;
-      margin-top:50%; 
-      font-size: 2vw;
-      font-family: "Josefin Sans";
-      position: absolute;
-      right:20%;
-      bottom:8%;
-      z-index:4;
-    }
-  }//close right cover
+.diamondText {
+  // border:1px solid red;
+  float:right;
+  margin-right: 15%;
+  margin-top:50%; 
+  font-size: 2vw;
+  font-family: "Josefin Sans";
+  position: absolute;
+  right:20%;
+  bottom:8%;
+  z-index:4;
+}
 
 //=======
 //Background and main area visible when cover is opened
 //=======
 
-  .mainBackground {
-    width:100%;
-    height:100%;
-    background-color: white;
-    padding:1px;
+.mainBackground {
+  width:100%;
+  height:100%;
+  background-color: white;
+  padding:1px;
+  z-index: 1;
+}
 
 //store information at top left of screen
-    .logoAreaMain {
-      max-width:500px;
-      height:auto;
-      position: absolute;
-      top:10px;
-      left:35px;
-      padding:1px;
-      z-index: 2;
-      opacity:0;
-      width:70%;
-    }
+.logoAreaMain {
+  max-width:500px;
+  height:auto;
+  position: absolute;
+  top:10px;
+  left:35px;
+  padding:1px;
+  z-index: 2;
+  opacity:0;
+  width:70%;
+}
 
 //picture accreditation
-    .pictureAccreditation {
-      position: absolute;
-      left:10px;
-      bottom:10px;
-      color:black;
+.pictureAccreditation {
+  position: absolute;
+  left:10px;
+  bottom:10px;
+  color:black;
 
-      h5 {
-        font-size: 1vw;
-      }
-    }
+  h5 {
+    font-size: 1vw;
+  }
+}
 
 //image holder and image slider divs for jQuery slider effect
     // #imageHolder {
@@ -289,25 +239,31 @@ body {
     //   margin:0 auto;
       // border:1px solid black;
 
+.slider-holder { 
+  position: relative;
+  max-width:80vw;
+  margin:0 auto;
+  margin-top: 5%;
+  // border:1px solid green;
+}
 
-
-      #imageSlider {
-        margin:0 auto;
-        margin-top: 10%;
-        position: relative;
-        width: 60vw;
-        height:70vh;
-        // border:1px solid green;
-
+.slider {
+  margin:0 auto;
+  position: relative;
+  width: 80vw;
+  height:70vh;
+  overflow: hidden;
+  // border:1px solid green;
+}
 
 //styling for images so they are centered within the container
-        .sp {
-          position: absolute;
-          margin:auto;
-          width: 60vw;
-          height:70vh;
-          z-index: 1;
-          // border:1px solid red;
+.slider-item {
+  position: absolute;
+  margin:auto;
+  width: 80vw;
+  height:70vh;
+  // border:1px solid red;
+}
         
           img {
             display:block;
@@ -320,74 +276,45 @@ body {
           }
        
 //styling for text to accompany images
-          .infoHolder {
-            position: absolute;
-            font-size: 2vw;
-            color:black;
-            z-index: 8;
-            bottom:-10vh;
-            right:0;
-            text-align: left;
+.infoHolder {
+  position: absolute;
+  font-size: 2vw;
+  color:black;
+  bottom:0;
+  right:20vw;
+  text-align: left;
 
-          .price {
-            text-align: right;
-            line-height: 0px;
-          }
-          }
-
-        }
-      }// close image slider
-    // }//close image holder
-
+  .price {
+    text-align: right;
+    line-height: 0px;
+  }
+}
   
 //trigger arrow to scroll from the left
     .previousTrigger {
-      width:100px;
-      height:100px;
-      float:left;
-      margin-left:10%;
-      margin-top: -10%;
-      z-index: 2;
-
-        
-      .leftArrow {
-        width:100%;
-        height:100%;
-        opacity: 0.3;
-          
-        // path {
-        //   animation: triggerAnimation 10s linear infinite;
-        // }
-      }
-    }//close previous trigger
+      width:150px;
+      height:200px;
+      position: absolute;
+      left:10%;
+      bottom:4%;
+      &:hover {
+      cursor: pointer;
+    }
+  }
 
 
 //trigger arrow to scroll from the right
     .nextTrigger {
-      width:100px;
-      height:100px;
-      float:right;
-      margin-right:10%;
-      margin-top: -10%;
-      z-index: 4;
-  
-
-     
-        
-      .rightArrow {
-        width:100%;
-        height:100%;
-        opacity:0.3;
-         
-        // path {
-        //   animation: triggerAnimation 10s linear infinite;
-        // }
+      width:150px;
+      height:200px;
+      position: absolute;
+      right:10%;
+      bottom:4%;
+      &:hover {
+        cursor: pointer;
       }
-    }//close next trigger
-
-  }//close main background
-
-}//close wrapper
+    }
+  
 
 //=======
 //Media Queries
@@ -556,3 +483,5 @@ body {
     }
   }
 }
+
+
