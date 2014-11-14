@@ -181,6 +181,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     color: white; }
   100% {
     color: #E4F1FE; } }
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; }
+
 body {
   font-family: "Josefin Sans", "Great Vibes", "helvetica neue";
   font-size: 8vw;
