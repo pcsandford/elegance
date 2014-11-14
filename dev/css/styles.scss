@@ -75,10 +75,10 @@ $gray: #111;
 
 //main body
 
-html{
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-}
+// html{
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+// }
 
 body {
   font-family: "Josefin Sans", "Great Vibes", "helvetica neue";
@@ -105,7 +105,7 @@ body {
     text-align: center;
     line-height: 1em;
     z-index: 6;
-    display: none;
+    opacity:0;
 
 
     .textLine1 {
@@ -334,6 +334,7 @@ body {
             line-height: 0px;
           }
           }
+
         }
       }// close image slider
     // }//close image holder
@@ -341,12 +342,13 @@ body {
   
 //trigger arrow to scroll from the left
     .previousTrigger {
-      width:80px;
-      height:80px;
+      width:100px;
+      height:100px;
       float:left;
       margin-left:10%;
       margin-top: -10%;
       z-index: 2;
+
         
       .leftArrow {
         width:100%;
@@ -362,12 +364,15 @@ body {
 
 //trigger arrow to scroll from the right
     .nextTrigger {
-      width:80px;
-      height:80px;
+      width:100px;
+      height:100px;
       float:right;
       margin-right:10%;
       margin-top: -10%;
-      z-index: 2;
+      z-index: 4;
+  
+
+     
         
       .rightArrow {
         width:100%;
