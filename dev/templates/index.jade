@@ -3,7 +3,7 @@ include _header.jade
 //- main cointainer for elements
 .wrapper
 	.headerText
-		p(class="textLine1") The newest additions to this seasons
+		p(class="textLine1") The newest additions to this season's
 		p(class="textLine2") Touch of Elegance Collection
 	//- left overlay with diamond pattern and text for header
 	.leftCover
@@ -67,12 +67,13 @@ include _header.jade
 							span(class="description") Part of the Diamond Collection for this Season
 						p(class="price") $Price
 		.previousTrigger
-			img(src="assets/images/swipeLeftTemp.png")
+			img(src="assets/images/swipeLeft.png")
 		.nextTrigger
-			img(src="assets/images/swipeRightTemp.png")
+			img(src="assets/images/swipeRight.png")
 		
 
 script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+script(src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js")
 script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js")
 //- script(src="TweenMax.min.js")
 script(src="TimelineMax.min.js")
