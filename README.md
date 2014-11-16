@@ -54,6 +54,12 @@ In order to change the headline to the text of your choice, please locate the fo
 To change the logo images on both the curtain and display page, please locate the following line of code in the idex.html file. You can then
 delete the information between the quotation marks following the src tag and replace with the file path to your own logo image.
 
+#### On the Left Curtain
+
+![Screenshot](http://www.cameroncodes.com/elegance/eleganceImages/coverLogo.png)
+
+#### On the Top Left of the Main Page
+
 ![Screenshot](http://www.cameroncodes.com/elegance/eleganceImages/mainlogo.png)
 
 ### Changing the Timing for the Curtain Closing
