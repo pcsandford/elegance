@@ -5,13 +5,15 @@ include _header.jade
 	.headerText
 		p(class="textLine1") The newest additions to this season's
 		p(class="textLine2") Touch of Elegance Collection
-	//- left overlay with diamond pattern and text for header
+	//- left overlay 
 	.leftCover
+		//-to replace the temporary logo with your own, please delete the information in quotation marks
+		//-after 'src' and add your own file path
 		.logoArea
 			img(src="assets/images/mockupLogo.png" alt="mockup of logo")
 
 
-	//- right overlay with diamond button and text
+	//- right overlay 
 	.rightCover
 		
 		//-Both github and cameroncodes watermarks to be removed in final product
@@ -28,14 +30,21 @@ include _header.jade
 	//- background for scrolling section
 	.mainBackground
 		
-		//-container for store name/logo/slogan
+		//-to replace the temporary logo with your own, please delete the information in quotation marks
+		//-after 'src' and add your own file path
 		.logoAreaMain
 			img(src="assets/images/mockupLogo.png" alt="mockup logo")
+		//-Please delete this area after you add your own images
 		.pictureAccreditation
 			h5 All jewellery images by Aleksey Gnilenkov
 
 
-		//-slide holder and right and left trigger buttons for scrolling section
+		//-slide holder and right and left swipe icons for scrolling section.
+		//-You can replace the images here by deleting the src code and replacing it with your
+		//-own file path. You can also change the text next to the 'p' and 'span' tags.
+		//-Additional images can be added by simply copying a set of tags here and adding them after slider-item-4. 
+		//-The simply rename this as 'slider-item-5' and repeat as necessary.
+
 		.slider-holder
 			.slider
 				.slider-item-1.slider-item
@@ -66,6 +75,8 @@ include _header.jade
 							br
 							span(class="description") Part of the Diamond Collection for this Season
 						p(class="price") $Price
+
+		//-images for swipe right and swipe left				
 		.previousTrigger
 			img(src="assets/images/swipeRight.png")
 		.nextTrigger
@@ -75,10 +86,8 @@ include _header.jade
 script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 script(src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js")
 script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js")
-//- script(src="TweenMax.min.js")
 script(src="TimelineMax.min.js")
 script(src="jquery.gsap.min.js")
 script(src="script.js")
-//- script(src="CSSPlugin.min.js")
-//- script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js")
+
 

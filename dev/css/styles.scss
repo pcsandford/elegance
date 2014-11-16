@@ -232,21 +232,12 @@ body {
     font-size: 1vw;
   }
 }
-
-//image holder and image slider divs for jQuery slider effect
-    // #imageHolder {
-    //   padding:1px;
-    //   width: 60vw;
-    //   height: 70vh;
-    //   margin:0 auto;
-      // border:1px solid black;
-
+//holder for the slides
 .slider-holder { 
   position: relative;
   max-width:80vw;
   margin:0 auto;
   margin-top: 5%;
-  // border:1px solid green;
 }
 
 .slider {
@@ -255,7 +246,6 @@ body {
   width: 80vw;
   height:70vh;
   overflow: hidden;
-  // border:1px solid green;
 }
 
 //styling for images so they are centered within the container
@@ -264,18 +254,16 @@ body {
   margin:auto;
   width: 80vw;
   height:70vh;
-  // border:1px solid red;
 }
         
-          img {
-            display:block;
-            margin: 0 auto;
-            max-height: 90%;
-            height:auto;
-            width:100%;
-            width:auto;
-            // border:1px solid blue;
-          }
+img {
+  display:block;
+  margin: 0 auto;
+  max-height: 90%;
+  height:auto;
+  width:100%;
+  width:auto;
+}
        
 //styling for text to accompany images
 .infoHolder {
@@ -293,25 +281,25 @@ body {
 }
   
 //swipe icon to scroll from the left
-    .previousTrigger {
-      width:100px;
-      height:100px;
-      position: absolute;
-      left:10%;
-      bottom:4%;
-      opacity: 0.5;
-  }
+.previousTrigger {
+  width:100px;
+  height:100px;
+  position: absolute;
+  left:10%;
+  bottom:4%;
+  opacity: 0.5;
+}
 
 
 //swipe icon to scroll from the right
-    .nextTrigger {
-      width:100px;
-      height:100px;
-      position: absolute;
-      right:10%;
-      bottom:4%;
-      opacity: 0.5;
-    }
+.nextTrigger {
+  width:100px;
+  height:100px;
+  position: absolute;
+  right:10%;
+  bottom:4%;
+  opacity: 0.5;
+}
   
 
 //=======
