@@ -2,8 +2,8 @@
 
 Elegance Jewellery, a customizable interactive digital retail display for jewellery and similar items. You can add your own images to the display to achieve a powerful dynamic visual effect and interactive experience to showcase your latest products. Your customers will enjoy the classic movie theatre slideshow effect, and will also be able to move the slides manually via a simple swipe of the screen. You can view a working example here http://pcsandford.github.io
 
-![Screenshot](assets/images/screenshot.png)
-Format: ![Alt Text](screenshot of opening image of display, showing title and curtain.)
+![Screenshot](dist/assets/images/screenshot.png)
+![Alt Text](screenshot of opening image of display, showing title and curtain.)
 
 Elegance Jewellery works in conjunction with Rise Vision, the digital signage management application that runs on Google Cloud.
 
