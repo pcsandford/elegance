@@ -32,8 +32,7 @@ At this time Chrome is the only browser that this project and Rise Vision suppor
 ### Changing the Images 
 
 To change the images to those of your choice, please locate the following line of code in the index.html file. You can then delete
-the information between the quotation marks following the src tag and replace with the file path to your own image. Please
-also change the text folling the p and span tags to add your own information.
+the information between the quotation marks following the src tag and replace with the file path to your own image. 
 
 ![Screenshot](http://www.cameroncodes.com/elegance/eleganceImages/image.png)
 
@@ -56,7 +55,7 @@ delete the information between the quotation marks following the src tag and rep
 
 #### On the Left Curtain
 
-![Screenshot](http://www.cameroncodes.com/elegance/eleganceImages/coverLogo.png)
+![Screenshot](http://www.cameroncodes.com/elegance/eleganceImages/logoCover.png)
 
 #### On the Top Left of the Main Page
 
