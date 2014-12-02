@@ -436,10 +436,6 @@ img {
   .logoArea {
     // border:1px solid pink;
     width:100%;
-
-    img {
-      width:100%;
-    }
   }
 
 //resize logo area on main area 
@@ -457,22 +453,44 @@ img {
   #imageHolder {
     max-height: 90%;
     height:auto;
-    max-width: 1000px;
+    max-width: 2000px;
     width:100%;
 
     #imageSlider {
       max-height: 90%;
       height:auto;
-      max-width: 1000px;
+      max-width: 2000px;
       width:100%;
         
         .sp img {
           height:auto;
-          max-width: 1000px;
+          max-width: 2000px;
           width:100%;
         }
     }
   }
+
+  .previousTrigger {
+  width:200px;
+  height:200px;
+  position: absolute;
+  left:10%;
+  bottom:30%;
+  opacity: 0.2;
+  display:none;
+}
+
+
+//swipe icon to scroll from the right
+.nextTrigger {
+  width:200px;
+  height:200px;
+  position: absolute;
+  right:10%;
+  bottom:30%;
+  opacity: 0.2;
+  display:none;
+}
 }
 
 
